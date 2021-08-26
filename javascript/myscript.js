@@ -1,16 +1,15 @@
 let listaNumeri = []
 
-for (let i =0; i < 100; i++){
-    let n = (i + 1);
+for (let i =1; i < 100; i++){
 
-    if (n % 5 == 0 && n % 3 == 0) {
+    if (i % 5 == 0 && i % 3 == 0) {
         listaNumeri.push("fizzbuzz")
-    } else if (n % 3 == 0){
+    } else if (i % 3 == 0){
         listaNumeri.push("fizz")
-    } else if ((n) % 5 == 0){
+    } else if ((i) % 5 == 0){
         listaNumeri.push("buzz")
     } else  {
-        listaNumeri.push(n);
+        listaNumeri.push(i);
     }
 }
 
